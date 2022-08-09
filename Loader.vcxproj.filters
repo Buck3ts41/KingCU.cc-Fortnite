@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{a7d809aa-5c8c-49cc-9035-0cd8cd1ea4f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{889a03a0-52ce-4cab-bc00-c50f7c01806e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rendering">
+      <UniqueIdentifier>{75f96c9d-3ee7-4d3b-bb7b-b8495626f487}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\base64.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="External\External.hpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="External\dx_renderer.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="yesrender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="overlay.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\utils.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\base64.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="External\dx9.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\menu.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\mouse_interface.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\offsets.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\overlay.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\settings.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\stdafx.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\structs.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\utils.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\vector.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\w2s.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\windows.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\aimbot.hpp">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\communication.hpp">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\driver.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="External\dx_renderer.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="yesrender.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="External\funcs.hpp">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="skStr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lazy_importer.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="overlays.h">
+      <Filter>External</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Utils\utils.cpp">
+      <Filter>Utils</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="./XInput.lib" />
+  </ItemGroup>
+</Project>
