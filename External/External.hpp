@@ -1128,7 +1128,7 @@ WPARAM MainLoop(forceinline::dx_renderer* renderer)
 
 
 			if (show_menu) {
-				if (menu_system.Window(skCrypt("KingCU.cc"), pos, FVector2D(400, 400), show_menu)) {
+				if (menu_system.Window(skCrypt("KingCU.cc"), pos, FVector2D(530, 400), show_menu)) {
 					if (menu_system.ButtonTab(skCrypt("Aimbot"), FVector2D(120, 24), buenotab == 0)) {
 						buenotab = 0;
 					}
@@ -1137,9 +1137,14 @@ WPARAM MainLoop(forceinline::dx_renderer* renderer)
 						buenotab = 1;
 					}
 					menu_system.SameLine();
-					if (menu_system.ButtonTab(skCrypt("Credits"), FVector2D(120, 24), buenotab == 2)) {
+					if (menu_system.ButtonTab(skCrypt("Exploit"), FVector2D(120, 24), buenotab == 2)) {
 						buenotab = 2;
 					}
+					menu_system.SameLine();
+					if (menu_system.ButtonTab(skCrypt("Credits"), FVector2D(120, 24), buenotab == 3)) {
+						buenotab = 3;
+					}
+
 
 					menu_system.Separator();
 
@@ -1210,6 +1215,12 @@ WPARAM MainLoop(forceinline::dx_renderer* renderer)
 						menu_system.Checkbox(skCrypt("Player Indicator"), &settings::enemyindicator);
 					}
 					if (buenotab == 2)
+					{
+						menu_system.Text("Exploit are too risky for public release.");
+						menu_system.Text("Add them yourself.");
+						
+					}
+					if (buenotab == 3)
 					{
 						menu_system.Text(" Buck3ts41 For the Cheat");
 						menu_system.Text(" Micca#1337 For the Driver");
@@ -1397,7 +1408,7 @@ void init()
 		driver.attach(GetCurrentProcessId());
 		if (driver.get_process_module("kernel32.dll") == (uintptr_t)GetModuleHandleA("kernel32.dll"))
 		{
-			printf("Communication works.\n");
+			printf(" [!] Communication works.\n");
 		}
 		else
 			printf("Communication failed.\n");
@@ -1407,8 +1418,8 @@ void init()
 
 		base_addr = driver.get_process_base(uint32_t(pid_str));
 
-		printf(("Process base address : % p.\n"), (void*)base_addr);
-		std::cout << "\n Base:" << base_addr;
+		printf((" [!] Process base address : % p.\n"), (void*)base_addr);
+		std::cout << "\n [!] Base:" << base_addr;
 
 		Width = GetSystemMetrics_Spoofed(SM_CXSCREEN);
 		Height = GetSystemMetrics_Spoofed(SM_CYSCREEN);
