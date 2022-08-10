@@ -21,6 +21,6 @@ Have fun pasting, but do not sell skid :(
 
 # Credits
 
-DavCU820 - Micca
+DavCU820 - ac1337
 
 
