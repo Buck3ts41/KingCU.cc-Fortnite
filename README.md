@@ -17,7 +17,6 @@ I suggest you to use your own driver, but you can use mine too.
 After mapping driver, start fortnite. When in lobby start cheat.
 
 INSERT to open/close menu.
-Have fun pasting, but do not sell skid :(
 
 # Credits
 
